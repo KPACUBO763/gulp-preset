@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo 'Привет!'",
-    "check": "prettier --check './src/**/*.{html,css,js}'",
+    "check": "prettier --check ./src/**/*.{html,css,js}",
     "format": "prettier --write ./src/**/*.{html,css,js}",
-    "lint": "stylelint './src/**/*.css'",
+    "lint": "stylelint ./src/**/*.css",
     "lintfix": "stylelint ./src/**/*.css --fix",
     "checkAll": "npm run check && npm run lint",
     "fixAll": "npm run format && npm run lintfix",
@@ -24,7 +24,7 @@
     "gulp": "^3.9.1",
     "gulp-concat-css": "^1.2.0",
     "gulp-plumber": "^1.2.1",
-    "prettier": "^2.8.7",
+    "prettier": "^2.8.8",
     "stylelint": "^15.4.0"
   }
 }
