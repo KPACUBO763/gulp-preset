@@ -14,17 +14,30 @@
     "build": "gulp build",
     "dev": "gulp",
     "fixAndBuild": "npm run fixAll && npm run build",
-    "lintfixAndPush": "npm run fixAll && git add . && git commit -m тест_скрипта && git push"
+    "lintfixAndPush": "npm run fixAll && git add . && git commit -m тест && git push"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.16",
     "browser-sync": "^3.0.2",
+    "cssnano": "^6.0.3",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-concat-css": "^1.2.0",
     "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.1.0",
+    "gulp-pug": "^5.0.0",
+    "html-minifier": "^4.0.0",
+    "postcss": "^8.4.33",
+    "postcss-combine-media-query": "^1.0.1",
     "prettier": "^2.8.8",
     "stylelint": "^15.4.0"
-  }
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
